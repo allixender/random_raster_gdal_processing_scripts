@@ -11,7 +11,7 @@ message = sendgrid.helpers.mail.Mail(
     subject='Sending with Twilio SendGrid is Fun',
     html_content='and easy to do anywhere, even with Python')
 
-sg = sendgrid.SendGridAPIClient("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")
+sg = sendgrid.SendGridXPIClient("SG.xxx")
 response = sg.send(message)
 print(response.status_code)
 print(response.body)
